@@ -1,28 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>World Auth</title>
-    <link rel="stylesheet" href="signincss.css">
-</head>
-<body>
-    <div class="page-container">
-        <div class="container">
-            <div class="left-panel">
-                <div class="company-name">DAOcast</div>
-            </div>
-            <div class="right-panel">
-                <h1>Login or create account</h1>
-                <p>Connect and verify with World ID.</p>
-                <button class="verify-btn">Verify with World ID</button>
-                <div class="or-text">OR</div>
-                <button class="wallet-btn">Verify with Wallet & World ID</button>
-                <a href="#" class="get-app-link">Get the WorldID App →</a>
-                <div class="identity-text">Sybil-resistant identity verification powered by World ID.</div>
-            </div>
-        </div>
-    </div>
-</body>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,14 +8,14 @@
     <style>
         /* Modal Styles */
         .modal {
-            display: none; /* Hidden by default */
+            display: none;
             position: fixed;
             z-index: 1;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+            background-color: rgba(0, 0, 0, 0.5);
             justify-content: center;
             align-items: center;
         }
@@ -85,7 +61,7 @@
                 <button class="verify-btn" id="verifyBtn">Verify with World ID</button>
                 <div class="or-text">OR</div>
                 <button class="wallet-btn">Verify with Wallet & World ID</button>
-                <a href="#" class="get-app-link">Get the WorldID App →</a>
+                <a href="https://apps.apple.com/no/app/world-app-worldcoin-wallet/id1560859847" class="get-app-link">Get the WorldID App →</a>
                 <div class="identity-text">Sybil-resistant identity verification powered by World ID.</div>
             </div>
         </div>
@@ -95,7 +71,7 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <img src="scan.PNG" alt="Verification Image">
-            <button>Continue</button>
+            <button id="continueBtn">Continue</button>
         </div>
     </div>
 
@@ -103,6 +79,7 @@
         // Get the modal and button elements
         const modal = document.getElementById("modal");
         const verifyBtn = document.getElementById("verifyBtn");
+        const continueBtn = document.getElementById("continueBtn");
 
         // Show the modal when the button is clicked
         verifyBtn.onclick = function() {
@@ -115,7 +92,11 @@
                 modal.style.display = "none";
             }
         };
+
+        // Redirect to the "communitypage.html" when the "Continue" button is clicked
+        continueBtn.onclick = function() {
+            window.location.href = "communitiespage.html";
+        };
     </script>
 </body>
-</html>
 </html>
