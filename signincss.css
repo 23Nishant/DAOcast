@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .page-container {
@@ -24,7 +24,7 @@ body {
 
 .left-panel {
     flex: 1;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,19 +48,21 @@ body {
 h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: black;
 }
 
 p {
     font-size: 16px;
     margin-bottom: 20px;
+    color: black;
 }
 
 .verify-btn, .wallet-btn {
     width: 100%;
     max-width: 300px;
     padding: 10px 20px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -71,10 +73,11 @@ p {
 .or-text {
     margin: 10px 0;
     font-size: 14px;
+    color: black;
 }
 
 .get-app-link {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 14px;
 }
@@ -83,4 +86,5 @@ p {
     font-size: 12px;
     margin-top: 20px;
     text-align: center;
+    color: black;
 }
