@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header
+            class="px-4 lg:px-6 h-14 flex items-center border-b border-gray-300">
+            <a class="flex items-center justify-center" href="#">
+                <a href="voteoptions.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em"
+                        height="2em" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664a1.108 1.108 0 0 1-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0l-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.6 1.6 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821c.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9 9 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                    </svg>
+                </a>
+
+                <span class="ml-2 text-lg font-bold">DAOcast</span>
+                <span class="sr-only">DAOcast</span>
+            </a>
+            <nav class="ml-auto flex gap-4 sm:gap-6">
+                <a
+                    class="text-sm font-medium hover:underline underline-offset-4"
+                    href="#">Features</a>
+                <a
+                    class="text-sm font-medium hover:underline underline-offset-4"
+                    href="#">About</a>
+                <a
+                    class="text-sm font-medium hover:underline underline-offset-4"
+                    href="#">My Profile</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <div class="w-full max-w-4xl mx-auto py-12 md:py-16 lg:py-20">
+            <div class="px-4 md:px-6 lg:px-8">
+                <div class="flex items-center gap-4">
+                    <span
+                        class="relative flex shrink-0 overflow-hidden rounded-full h-16 w-16 md:h-20 md:w-20">
+                        <span
+                            class="flex h-full w-full items-center justify-center rounded-full bg-muted">JD</span>
+                    </span>
+                    <div>
+                        <h1 class="text-2xl font-bold md:text-3xl">John Doe</h1>
+                        <p class="text-muted-foreground">Prospective DAO
+                            Member</p>
+                    </div>
+                </div>
+                <div class="mt-8 space-y-8">
+                    <section>
+                        <h2
+                            class="text-xl font-bold md:text-2xl">Experience</h2>
+                        <div class="mt-4 space-y-4">
+                            <div>
+                                <h3 class="text-lg font-medium">Software
+                                    Engineer</h3>
+                                <p class="text-muted-foreground">
+                                    5 years of experience building web
+                                    applications and contributing to open-source
+                                    projects.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium">Community
+                                    Organizer</h3>
+                                <p class="text-muted-foreground">
+                                    Actively involved in local tech meetups and
+                                    hackathons, organizing events and mentoring
+                                    new developers.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium">Blockchain
+                                    Enthusiast</h3>
+                                <p class="text-muted-foreground">
+                                    Passionate about decentralized technologies
+                                    and the potential of DAOs. Participated in
+                                    several DAO-related hackathons and
+                                    workshops.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-bold md:text-2xl">Why do you
+                            want to join DAO?</h2>
+                        <p class="mt-4 text-muted-foreground">
+                            I'm excited about the potential of decentralized
+                            autonomous organizations (DAOs) to revolutionize the
+                            way we collaborate and make decisions. I believe my
+                            skills and experience as a software engineer,
+                            community organizer, and blockchain enthusiast can
+                            contribute to the growth and success of this DAO.
+                            I'm passionate about the principles of
+                            decentralization, transparency, and collective
+                            governance, and I'm eager to be a part of a
+                            community that embodies these values.
+                        </p>
+                    </section>
+                </div>
+                <div class="mt-8 flex justify-center gap-4">
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-green-500 text-white hover:bg-green-600 h-10 px-4 py-2 w-full md:w-auto">
+                        Vote in Favor
+                    </button>
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-red-500 text-white hover:bg-red-600 h-10 px-4 py-2 w-full md:w-auto">
+                        Vote for Denial
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

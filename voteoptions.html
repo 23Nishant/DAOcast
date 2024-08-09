@@ -12,71 +12,117 @@
     </head>
     <body>
 
+        <header class="px-4 lg:px-6 h-14 flex items-center bg-primary text-primary-foreground border-b border-gray-300">
+            <a class="flex items-center justify-center" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664a1.108 1.108 0 0 1-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0l-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.6 1.6 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821c.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9 9 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"/>
+                </svg>
+                <span class="ml-2 text-lg font-bold">DAOcast</span>
+                <span class="sr-only">DAOcast</span>
+            </a>
+            <nav class="ml-auto flex gap-4 sm:gap-6">
+                <a class="text-sm font-medium hover:underline underline-offset-4" href="#">Features</a>
+                <a class="text-sm font-medium hover:underline underline-offset-4" href="#">About</a>
+                <a class="text-sm font-medium hover:underline underline-offset-4" href="#">My Profile</a>
+            </nav>
+        </header>
+
+
         <main class="w-full">
             <section class="w-full py-12 md:py-24 lg:py-32">
                 <div class="container px-4 md:px-6">
                     <div class="space-y-8">
                         <div class="space-y-4">
-                            <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                                Vote for Grants
-                            </h2>
-                            <p class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                Review and vote on grant proposals to support the growth and development of the community.
+                            <h2
+                                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Vote
+                                for Grants</h2>
+                            <p
+                                class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                                Review and vote on grant proposals to support
+                                the growth and development of the community.
                             </p>
                         </div>
-                        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6" data-v0-t="card">
+                        <div
+                            class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
                                 <div class="space-y-4">
-                                    <h3 class="text-xl font-bold">Grant Proposal #1</h3>
-                                    <p class="text-muted-foreground">Funding for a new developer education program.</p>
+                                    <h3 class="text-xl font-bold">Grant Proposal
+                                        #1</h3>
+                                    <p class="text-muted-foreground">Funding for
+                                        a new developer education program.</p>
                                 </div>
                                 <div class="mt-auto flex gap-2">
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
                                         About
                                     </button>
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2">
+                                    <button
+                                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2">
                                         Vote
                                     </button>
                                 </div>
                             </div>
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6" data-v0-t="card">
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
                                 <div class="space-y-4">
-                                    <h3 class="text-xl font-bold">Grant Proposal #2</h3>
-                                    <p class="text-muted-foreground">Funding for a community-led hackathon.</p>
+                                    <h3 class="text-xl font-bold">Grant Proposal
+                                        #2</h3>
+                                    <p class="text-muted-foreground">Funding for
+                                        a community-led hackathon.</p>
                                 </div>
                                 <div class="mt-auto flex gap-2">
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
                                         About
                                     </button>
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2">
+                                    <button
+                                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2"
+                                        onclick="window.location.href='voteforgrant.html';">
                                         Vote
                                     </button>
                                 </div>
                             </div>
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6" data-v0-t="card">
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
                                 <div class="space-y-4">
-                                    <h3 class="text-xl font-bold">Grant Proposal #3</h3>
-                                    <p class="text-muted-foreground">Funding for a new community-driven marketing campaign.</p>
+                                    <h3 class="text-xl font-bold">Grant Proposal
+                                        #3</h3>
+                                    <p class="text-muted-foreground">Funding for
+                                        a new community-driven marketing
+                                        campaign.</p>
                                 </div>
                                 <div class="mt-auto flex gap-2">
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
                                         About
                                     </button>
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2">
                                         Vote
                                     </button>
                                 </div>
                             </div>
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6" data-v0-t="card">
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
                                 <div class="space-y-4">
-                                    <h3 class="text-xl font-bold">Grant Proposal #4</h3>
-                                    <p class="text-muted-foreground">Funding for a new community-led research initiative.</p>
+                                    <h3 class="text-xl font-bold">Grant Proposal
+                                        #4</h3>
+                                    <p class="text-muted-foreground">Funding for
+                                        a new community-led research
+                                        initiative.</p>
                                 </div>
                                 <div class="mt-auto flex gap-2">
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
                                         About
                                     </button>
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2">
                                         Vote
                                     </button>
                                 </div>
@@ -89,66 +135,187 @@
                 <div class="container px-4 md:px-6">
                     <div class="space-y-8">
                         <div class="space-y-4">
-                            <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                                Vote for Members
-                            </h2>
-                            <p class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                Review and vote on new members to join the community and contribute to its growth and development.
+                            <h2
+                                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Vote
+                                for Members</h2>
+                            <p
+                                class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                                Review and vote on new members to join the
+                                community and contribute to its growth and
+                                development.
                             </p>
                         </div>
-                        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6" data-v0-t="card">
+                        <div
+                            class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
                                 <div class="space-y-4">
-                                    <h3 class="text-xl font-bold">Member Candidate #1</h3>
-                                    <p class="text-muted-foreground">A passionate community member with a strong track record of contributions.</p>
+                                    <h3 class="text-xl font-bold">Member
+                                        Candidate #1</h3>
+                                    <p class="text-muted-foreground">
+                                        A passionate community member with a
+                                        strong track record of contributions.
+                                    </p>
                                 </div>
                                 <div class="mt-auto flex gap-2">
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
                                         About
                                     </button>
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2"
+                                        onclick="window.location.href='voteforcandidate.html';">
                                         Vote
                                     </button>
                                 </div>
                             </div>
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6" data-v0-t="card">
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
                                 <div class="space-y-4">
-                                    <h3 class="text-xl font-bold">Member Candidate #2</h3>
-                                    <p class="text-muted-foreground">A skilled developer with a history of contributing to open-source projects.</p>
+                                    <h3 class="text-xl font-bold">Member
+                                        Candidate #2</h3>
+                                    <p class="text-muted-foreground">
+                                        A skilled developer with a history of
+                                        contributing to open-source projects.
+                                    </p>
                                 </div>
                                 <div class="mt-auto flex gap-2">
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
                                         About
                                     </button>
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2">
                                         Vote
                                     </button>
                                 </div>
                             </div>
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6" data-v0-t="card">
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
                                 <div class="space-y-4">
-                                    <h3 class="text-xl font-bold">Member Candidate #3</h3>
-                                    <p class="text-muted-foreground">A dedicated community builder with experience in organizing events.</p>
+                                    <h3 class="text-xl font-bold">Member
+                                        Candidate #3</h3>
+                                    <p class="text-muted-foreground">
+                                        A community organizer with a vision for
+                                        expanding the project's reach.
+                                    </p>
                                 </div>
                                 <div class="mt-auto flex gap-2">
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
                                         About
                                     </button>
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2">
                                         Vote
                                     </button>
                                 </div>
                             </div>
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6" data-v0-t="card">
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
                                 <div class="space-y-4">
-                                    <h3 class="text-xl font-bold">Member Candidate #4</h3>
-                                    <p class="text-muted-foreground">An experienced marketer with a passion for community growth.</p>
+                                    <h3 class="text-xl font-bold">Member
+                                        Candidate #4</h3>
+                                    <p class="text-muted-foreground">A marketing
+                                        expert with a track record of successful
+                                        campaigns.</p>
                                 </div>
                                 <div class="mt-auto flex gap-2">
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
                                         About
                                     </button>
-                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2">
+                                        Vote
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-full py-12 md:py-24 lg:py-32">
+                <div class="container px-4 md:px-6">
+                    <div class="space-y-8">
+                        <div class="space-y-4">
+                            <h2
+                                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Vote
+                                for Governance</h2>
+                            <p
+                                class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                                Review and vote on proposals to update the
+                                community's governance structure and policies.
+                            </p>
+                        </div>
+                        <div
+                            class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
+                                <div class="space-y-4">
+                                    <h3 class="text-xl font-bold">Governance
+                                        Proposal #1</h3>
+                                    <p class="text-muted-foreground">
+                                        Updating the community's decision-making
+                                        process to be more inclusive.
+                                    </p>
+                                </div>
+                                <div class="mt-auto flex gap-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                        About
+                                    </button>
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2">
+                                        Vote
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
+                                <div class="space-y-4">
+                                    <h3 class="text-xl font-bold">Governance
+                                        Proposal #2</h3>
+                                    <p class="text-muted-foreground">
+                                        Establishing new guidelines for
+                                        community-led initiatives and projects.
+                                    </p>
+                                </div>
+                                <div class="mt-auto flex gap-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                        About
+                                    </button>
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2">
+                                        Vote
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between p-6"
+                                data-v0-t="card">
+                                <div class="space-y-4">
+                                    <h3 class="text-xl font-bold">Governance
+                                        Proposal #3</h3>
+                                    <p class="text-muted-foreground">
+                                        Revising the community's code of conduct
+                                        and enforcement policies.
+                                    </p>
+                                </div>
+                                <div class="mt-auto flex gap-2">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                        About
+                                    </button>
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-gray-800 h-10 px-4 py-2">
                                         Vote
                                     </button>
                                 </div>
@@ -158,7 +325,5 @@
                 </div>
             </section>
         </main>
-
-        <script src="" async defer></script>
     </body>
 </html>
