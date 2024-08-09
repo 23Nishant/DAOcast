@@ -42,10 +42,26 @@
             border: none;
             cursor: pointer;
             font-size: 16px;
+            border-radius: 8px; /* Add border-radius for rounded edges */
         }
 
         .modal button:hover {
+            background-color: #333; /* Change the hover color slightly for better visibility */
+        }
+
+        /* General button styles */
+        .verify-btn, .wallet-btn {
+            padding: 10px 20px;
             background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px; /* Add border-radius for rounded edges */
+        }
+
+        .verify-btn:hover, .wallet-btn:hover {
+            background-color: #333; /* Change the hover color slightly for better visibility */
         }
     </style>
 </head>
@@ -71,7 +87,7 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <img src="scan.PNG" alt="Verification Image">
-            <button id="continueBtn">Continue</button>
+            <button id="continueBtn">Verify</button>
         </div>
     </div>
 
